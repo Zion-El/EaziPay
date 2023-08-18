@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section style={{backgroundImage: 'url("/images/gradientshero-bg.png")'}} className='relative w-full bg-cover h-[100vh] lg:h-[110vh]'>
         <TopNav/>
-        <div className='flex flex-col md:flex-row justify-center items-center h-[80%] px-[2rem] md:px-[4rem] lg:px-[6rem] md:pr-0 lg:pl-[10rem] relative'>
+        <div className='flex flex-col md:flex-row justify-center items-center h-[80%] px-[1rem] md:px-[4rem] lg:px-[6rem] md:pr-0 lg:pl-[10rem] relative'>
           <div  className='w-[90%] md:w-[50%] flex flex-col space-y-8 z-[9] '>
 
               <div>
@@ -28,14 +28,14 @@ const Hero = () => {
 
                 <div>
                 <div className='flex justify-start items-center space-x-3'>
-                      <button className='flex bg-[#fff] p-1 justify-content items-center md:p-3 rounded-2xl space-x-2 w-[200px] md:w-[185px]'>
+                      <button className='flex bg-[#fff] p-1 justify-content items-center lg:p-3 rounded-2xl space-x-2 w-[200px] md:w-[185px]'>
                         <img className=' h-[35px] md:h-[45px] w-[35px] md:w-[45px]' src={Apple} alt="" />
                         <div className='text-left'>
                           <small className='font-[500] text-[10px] md:text-[12px] text-[inter]'>Download on the</small>
                           <h2 className='text-[inter] font-[700] text-[12px] md:text-[14px] '>Appstore</h2>
                         </div>
                       </button>
-                      <button className='flex bg-[#fff] p-1 justify-content items-center md:p-3 rounded-2xl space-x-2 w-[200px] md:w-[185px]'>
+                      <button className='flex bg-[#fff] p-1 justify-content items-center lg:p-3 rounded-2xl space-x-2 w-[200px] md:w-[185px]'>
                         <img className=' h-[35px] md:h-[45px] w-[35px] md:w-[45px]' src={Google} alt="" />
                         <div  className='text-left'>
                           <small className='font-[500] text-[10px] md:text-[12px] text-[inter]'>Get on</small>

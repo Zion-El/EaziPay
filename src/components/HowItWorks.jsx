@@ -13,7 +13,7 @@ const  HowItWorks = () => {
         <div  className='w-full h-full flex justify-center items-center '>
           <div className='flex w-full md:px-6 lg:px-16 h-full'>
             {/* home beeper */}
-            <div  className='relative bg-cover bg-center md:w-[60%] lg:w-[50%]  flex justify-center items-center'>
+            <div  className='relative my-[6rem] bg-cover bg-center md:w-[60%] lg:w-[50%]  flex justify-center items-center'>
 
                 <img className='w-full h-full md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]'  src={BG} alt="" />
                 

@@ -5,10 +5,10 @@ import Send from '../../assets/send.png'
 
 const Footer = () => {
   return (
-    <div className='bg-[#FFF] border border-t-[#EAEAEA] py-[2rem] px-2 md:px-[3rem] flex justify-between items-start md:space-x-[5rem] lg:space-x-[10rem] w-full'>
+    <div className='bg-[#FFF] border border-t-[#EAEAEA] py-[2rem] px-2 md:px-[3rem] flex-col-reverse md:flex-row justify-between items-start md:space-x-[5rem] lg:space-x-[10rem] w-full'>
       <div className='space-y-4'>
         <img src={LogoDark} alt="" />
-        <div>
+        <div className='hidden md:block'>
           <p className='text-[12px] lg:text-[16px] text-[inter] text-[#7C7C7C]'>Copyright © 2023 Eazipay. </p> 
           <p  className='text-[12px] lg:text-[16px] text-[inter] text-[#7C7C7C]'>All rights reserved</p>        
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='footer-grid'>
+      <div className='footer-grid px-8 md:px-0'>
         <div className='space-y-5'>
           <h2 className='font-[500] text-[14px] lg:text-[20px] text-[inter] text-[#292A29]'>Product</h2>
           <div className='flex flex-col space-y-3'>
@@ -63,6 +63,11 @@ const Footer = () => {
           
         </div>
       </div>
+
+      <div className='md:hidden flex mt-6 justify-between border border-t-[#7C7C7C] py-3 px-6'>
+          <p className='text-[12px] lg:text-[16px] text-[inter] text-[#7C7C7C]'>Copyright © 2023 Eazipay. </p> 
+          <p  className='text-[12px] lg:text-[16px] text-[inter] text-[#7C7C7C]'>All rights reserved</p>        
+        </div>
     </div>
   )
 }
