@@ -1,8 +1,12 @@
 import React from 'react'
 import Flag from '../dash-assets/flag.png'
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, Text, flexbox } from '@chakra-ui/react'
-import { accordion } from './Data'
+import { accordion, setting } from './Data'
 import { Link } from 'react-router-dom'
+
+import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
+import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
+
 
 
 const Drawer = () => {
@@ -26,6 +30,38 @@ const Drawer = () => {
       <Accordion allowMultiple>
       {
             accordion.map((item, index)=>{
+              return(
+              <AccordionItem>
+
+                  <h2>
+                  <AccordionButton>
+                      <Box as="span" flex='1' textAlign='left'>
+                        <Text sx={{fontFamily:'inter', fontWeight:'500',  color:'#515251', fontsize:'12px'}}>{item.title}</Text>
+                      
+                      </Box>
+                      <AccordionIcon />
+                  </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4} sx={{display:'flex', flexDirection:'column'}}>
+                    {
+                      item.children.map((child, index)=><Link to={child.link} key={index}><Box as="span" flex='1' textAlign='left' >{child.head}</Box></Link>)
+                    }
+                    
+                  </AccordionPanel>
+              </AccordionItem>                
+              )
+            })
+          }
+
+        </Accordion>
+        <Box sx={{py:4}} >
+        <Text sx={{fontFamily:'inter', fontWeight:'500',  color:'#515251', fontsize:'12px'}}>Support</Text>
+
+        </Box>
+        <Divider/>
+        <Accordion allowMultiple>
+      {
+            setting.map((item, index)=>{
               return(
               <AccordionItem>
 

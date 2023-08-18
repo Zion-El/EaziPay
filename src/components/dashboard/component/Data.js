@@ -118,6 +118,27 @@ export const accordion = [
         ]
     },
 ]
+export const setting = [
+    {
+        icon: '',
+        title: 'Setting',
+        children: [
+            {
+                head:'Item 1',
+                link:'',
+            },
+            {
+                head:'Item 2',
+                link:'',
+            },
+            {
+                head:'Item 3',
+                link:'',
+            },
+        ]
+    },
+
+]
 
 export const activity_stat =[
     {

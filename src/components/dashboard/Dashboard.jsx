@@ -13,10 +13,17 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 // import React, { useState } from 'react'
 import NavImg from './dash-assets/navImg.png'
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { Progress } from '@chakra-ui/react'
+import { Male } from '@mui/icons-material'
 
 const Dashboard = () => {
     const [hide, setHide] = useState(false)
     const [value, setValue] = useState('2022-04-17')
+
+    const male_count = 32
+    const female_count = 32
+    const total = male_count + female_count
+    const percent = (male_count/total) *100
 
     const [toggle, setToggle] = useState(true)
 
@@ -103,6 +110,21 @@ const Dashboard = () => {
                         <div className='w-full h-[33vh] rounded-2xl bg-white'>
                             <div className='w-full h-[15%] bg-[#D9EBCD] rounded-tr-[16px] rounded-tl-[16px] flex justify-center items-center '>
                                 <p className='font-[500] text-[16px] text-[#515251]'>Next Payroll</p>
+                            </div>
+
+                            <div className='p-3 h-[40%] border-b border-b-[#E7E8E7] flex justify-center items-center'>
+                                <button></button>
+                                <p className='font-[700] text-[18px] text-[inter] text-[#515251]'>9/11/2023</p>
+                            </div>
+                            <div className='p-3 h-[40%] border-t border-t-[#E7E8E7]'>
+                                <h2 className='text-[#515251] font-[500] text-[inter] text-[16px]'>Top Employee</h2>
+                                <h1 className='text-[#292A29] font-[700] text-[inter] text-[32]'>{total}</h1>
+                                <Progress colorScheme='green'  size='sm' value={percent} />
+                                <div className='flex justify-between items-center'>
+                                    <p className='text-[#8D8E8D] font[700] text-[10px]'>Male <br/> {male_count}</p>
+                                    <p className='text-[#8D8E8D] font[700] text-[10px]'>Female <br/> {female_count}</p>
+
+                                </div>
                             </div>
 
                             <div>
