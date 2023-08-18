@@ -45,7 +45,7 @@ const Dashboard = () => {
                         </button>
                     
                     </div>
-                
+                <img></img>
                 <div className='flex sm:space-x-4 lg:space-x-12 justify-center items-center '>
                     <div className='relative'>
                         <NotificationsNoneOutlinedIcon/>
