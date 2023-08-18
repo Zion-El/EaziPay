@@ -2,18 +2,25 @@ import React from 'react'
 import SearchIcon from '../dash-assets/Magnifiersearch.png'
 import { activity_stat } from './Data'
 import { Bonus, Emp_Mgt, Payroll, Wallet } from '../../common/Activity'
+import Filter from '../../../assets/equalizerfilter.png'
+import TuneIcon from '@mui/icons-material/Tune';
 
 const Recent = () => {
   return (
     <div className='space-y-6'>
       <h2 className='font-[500] text-[inter] text-[24px] md:text-[32px] text-[#292A29] leading-[40px]'>Recent Activities</h2>
 
-      <div className='w-full flex'>
+      <div className='w-full flex space-x-4'>
         <div className='flex bg-transparent z-10 rounded-[16px] w-[90%] border border-[#B5B6B5] h-[40px]'>
             <input className='border-none outline-none w-full px-6 rounded-bl-[16px] rounded-tl-[16px]' placeholder='Search Employee' type="text" name="" id="" />
             <button className='bg-[#D9EBCD] border flex justify-center items-center  w-[102px] h-full rounded-tr-[16px] rounded-br-[16px]'><img src={SearchIcon} alt="" /></button>
         </div>
-        <div></div>
+        <button className='h-[40px] border border-[#B5B6B5] w-[10%] bg-white rounded-[16px] flex justify-center items-center space-x-3'>
+            <img src={Filter} alt="filter" /> 
+
+            {/* <TuneIcon color='#B5B6B5' fontSize='medium'/> */}
+            <p className='hidden md:block text-[#B5B6B5] text-[inter] text-[14px]'>Filter</p>
+        </button>
       </div>
 
       <div className='bg-[#F2F1F180] bg-opacity-70 rounded-[20px] p-1 py-3 md:p-3 h-[550px] w-full overflow-y-auto'>

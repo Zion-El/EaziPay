@@ -13,9 +13,9 @@ const TopNav = () => {
       <div>
         <img className='h-[25px] w-[100px] md:h-[35px] md:w-[130px]'  src={Logo} alt="Logo" />
       </div>
-      <div className='hidden lg:flex space-x-4 mr-[9rem] ml-[3.5rem] '>
+      <div className='hidden lg:flex space-x-8 mr-[9rem] ml-[3.5rem] '>
         {
-            navLink.map((item,index)=><Link className='text-[inter]' to={item.url}>{item.title}</Link>)
+            navLink.map((item,index)=><Link className='text-[inter] text-[#515251] text-[14px] font-[500]' to={item.url}>{item.title}</Link>)
         }
       </div>
 
