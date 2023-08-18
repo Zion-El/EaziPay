@@ -1,3 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +14,208 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+@font-face {
+  font-family: 'aeonik-bold';
+  src: url('/public/font/aeonik/._AeonikTRIAL-Bold.otf');
+}
+
+@font-face {
+  font-family: 'aeonik-reg';
+  src: url('/public/font/aeonik/._AeonikTRIAL-Regular.otf');
+}
+@font-face {
+  font-family: 'mellow-bold';
+  src: url('/public/font/mello/MADEMellowPERSONALUSE-Bold.otf');
+}
+
+@font-face {
+  font-family: 'mellow-reg';
+  src: url('/public/font/mello/MADEMellowPERSONALUSE-Regular.otf');
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.nav-btn{
+  width: 168px;
+  height: 30px;
+  border-radius: 24px;
+  gap: 8px
+
+}
+.btn-primary{ 
+  background: rgba(17, 69, 59, 1);
+  box-shadow: 0px 8px 16px 0px rgba(17, 69, 59, 0.2);
+  color: #fff;
+}
+
+.btn-classic{
+  width: 230px;
+  height: 40px;
+  padding: 8px 11.504164695739746px 8px 11.504164695739746px;
+  border-radius: 12px;
+  gap: 11.504164695739746px;
+  background: rgba(17, 69, 59, 1);
+  box-shadow: 0px 8px 16px 0px rgba(17, 69, 59, 0.2);
+  color: #fff;
+  transition: all ease-in-out .3s;
+}
+.btn-basic{ 
+  width: 230px;
+  height: 40px;
+  padding: 8px 11.504164695739746px 8px 11.504164695739746px;
+  border-radius: 12px;
+  gap: 11.504164695739746px;
+  background-color: #F2F1F1;
+  color: #515251;
+}
+
+.shadow{
+  box-shadow: 0px 20px 48px 0px #AAAAAA4A;
+}
+
+.contact input{
+  width: 100%;
+  height: 40px;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid #B5B6B5;
+  outline: none;
+}
+
+.payment{
+  background-image: url('/public/images/payment-bg.png');
+}
+
+.individual-card{
+  width: 450px;
+  height: 250px;
+  border-radius: 16px;
+  gap: 10px;
+  background: linear-gradient(0deg, #11453B, #11453B), radial-gradient(50% 50% at 50% 50%, rgba(217, 235, 205, 0.14) 0%, rgba(217, 235, 205, 0.0266) 100%);
+  box-shadow: -11px 0px 19px 0px #1717174D;
+  transition: all ease-in-out .8s;
+
+/* box-shadow: 0px 13px 20px 0px #17171733; */
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(217, 235, 205, 0.14) 0%, rgba(217, 235, 205, 0.0266) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.dashCard{
+  width: 150px;
+height: 100px;
+border-radius: 24px;
+border: 1px;
+gap: 16px;
+border: 1px solid #E7E8E7;
+box-shadow: 0px 9px 18px 0px #AAAAAA26;
+transition: all ease-in-out .5s;
+}
+.dashCard:hover{
+  width: 170px;
+  background: #0a6e5a;
+  color: #fff;
+}
+
+.activity_card{
+  width: 100%;
+  height: 95px;
+border-radius: 16px;
+background: linear-gradient(0deg, #fff, #fff);
+border: 1px solid #E7E8E7;
+box-shadow: 0px 9px 18px 0px #AAAAAA26;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.fund-btn{
+  width: 132px;
+  height: 40px;
+  border-radius: 24px;
+  background: #D9EBCD;
+  box-shadow: 0px 6px 12px 0px #00000033;
+
+}
+
+.nav{
+  transition: all ease-in-out .5s;
+}
+
+.gradient{
+  box-shadow: 0px 9px 18px 0px #AAAAAA26;
+}
+
+@media screen and (max-width: 768px) {
+  .dashCard{
+  width: 120px;
+  height: 80px;
+  border-radius: 16px;
+  gap: 8px;
+  margin-bottom: 10px;
+  }
+  .fund-btn{
+  height: 35px;
+  }
+  .dashCard:hover{
+    width: 135px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 425px) {
+  .dashCard{
+  width: 160px;
+  height: 50px;
+  border-radius: 16px;
+  gap: 8px;
+  margin-bottom: 10px;
+  }
+  .fund-btn{
+  width: 100%;
+  height: 30px;
+  }
+  .dashCard:hover{
+    width: 165px;
+    background: #0a6e5a;
+    color: #fff;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .individual-card{
+    width: 100% !important;
+    height: 180px;
+    border-radius: 16px;
+    gap: 10px;
+    position: relative;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
 }
