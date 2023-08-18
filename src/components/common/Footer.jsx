@@ -5,7 +5,7 @@ import Send from '../../assets/send.png'
 
 const Footer = () => {
   return (
-    <div className='bg-[#FFF] border border-t-[#EAEAEA] py-[2rem] px-2 lg:px-[3rem] md: flex md:flex-row justify-between items-start md:space-x-[2rem] lg:space-x-[10rem] w-full'>
+    <div className='bg-[#FFF] border border-t-[#EAEAEA] py-[2rem] px-2 lg:px-[3rem] md:flex md:flex-row justify-between items-start md:space-x-[2rem] lg:space-x-[10rem] w-full'>
       <div className='space-y-4'>
         <img src={LogoDark} alt="" />
         <div className='hidden md:block'>
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='md:hidden flex mt-6 justify-between border border-t-[#7C7C7C] py-3 px-6'>
+      <div className='md:hidden flex mt-6 justify-between border-t border-t-[#7C7C7C] py-3 px-6'>
           <p className='text-[12px] lg:text-[16px] text-[inter] text-[#7C7C7C]'>Copyright © 2023 Eazipay. </p> 
           <p  className='text-[12px] lg:text-[16px] text-[inter] text-[#7C7C7C]'>All rights reserved</p>        
         </div>
