@@ -7,7 +7,7 @@ import Google from '../assets/google.png'
 
 const  Payment = () => {
   return (
-    <section style={{backgroundImage: 'url("/images/payment-bg.png")'}} className='relative bg-cover bg-center flex flex-col h-[90vh] w-full'>
+    <section style={{backgroundImage: 'url("/images/payment-bg.png")'}} className='relative bg-cover bg-center flex mt-20 md:mt-0 flex-col h-[90vh] w-full'>
         <img className='w-full h-full absolute top-0 left-0' src={Pattern} alt="" />
         <img className='opacity-80 md:opacity-[1] absolute top-0 left-8 lg:left-[8rem]' src={Grid} alt="" />
         <div  className='w-full h-full flex justify-center items-center lg:px-[8rem]'>
