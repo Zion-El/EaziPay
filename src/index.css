@@ -219,3 +219,13 @@ box-shadow: 0px 9px 18px 0px #AAAAAA26;
     grid-gap: 10px;
   }
 }
+@media screen and (max-width: 360px) {
+  .dashCard{
+  width: 150px;
+  }
+
+  .dashCard:hover{
+    width: 155px;
+  }
+
+}
