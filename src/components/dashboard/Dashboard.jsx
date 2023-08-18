@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import Drawer from './component/Drawer'
-import Nav from './component/Nav'
 import Wallet from './dash-assets/walletBG.png'
 import { card_data } from './component/Data'
 import DashCard from './component/DashCard'
 import Recent from './component/Recent'
-import { SmallCloseIcon, ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
+import { CalendarIcon, SmallCloseIcon, ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 import LineChart from './component/LineChart'
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -14,11 +13,10 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import NavImg from './dash-assets/navImg.png'
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Progress } from '@chakra-ui/react'
-import { Male } from '@mui/icons-material'
 
 const Dashboard = () => {
     const [hide, setHide] = useState(false)
-    const [value, setValue] = useState('2022-04-17')
+    // const [value, setValue] = useState('2022-04-17')
 
     const male_count = 32
     const female_count = 32
@@ -26,10 +24,6 @@ const Dashboard = () => {
     const percent = (male_count/total) *100
 
     const [toggle, setToggle] = useState(true)
-
-    const handleClick = () =>{
-        alert('hello')
-    }
 
   return (
     <section className='flex bg-[#F2F1F180] bg-opacity-1 '>
@@ -51,14 +45,14 @@ const Dashboard = () => {
                         </button>
                     
                     </div>
-                <img></img>
+                
                 <div className='flex sm:space-x-4 lg:space-x-12 justify-center items-center '>
                     <div className='relative'>
                         <NotificationsNoneOutlinedIcon/>
                         <div className='h-2 w-2 bg-red-500 rounded-full absolute top-1 right-1'></div>
                     </div>
                     <div className='flex justify-center items-center space-x-2 '>
-                        <img className='sm:w-[50px] sm:h-[50px]' src={NavImg} alt="" />
+                        <img className='sm:w-[50px] sm:h-[50px]' src={NavImg} alt="nav" />
                         <div className='w-[180px] hidden lg:block'>
                         <h2 className='text-[16px] font-[700] text-[#2B2B2B] text-[inter]'>Kalu Abasiama</h2>
                         <div className='flex items-center justify-between'>
@@ -112,8 +106,11 @@ const Dashboard = () => {
                                 <p className='font-[500] text-[16px] text-[#515251]'>Next Payroll</p>
                             </div>
 
-                            <div className='p-3 h-[40%] border-b border-b-[#E7E8E7] flex justify-center items-center'>
-                                <button></button>
+                            <div className='p-3 h-[40%] border-b border-b-[#E7E8E7] flex justify-center items-center flex-col'>
+                                <div className='flex space-x-3'>
+                                    <button><CalendarIcon color='#515251'/></button> <p className='text-[inter] text-[#515251] text-[12px]'>Friday</p>
+                                </div>
+                                
                                 <p className='font-[700] text-[18px] text-[inter] text-[#515251]'>9/11/2023</p>
                             </div>
                             <div className='p-3 h-[40%] border-t border-t-[#E7E8E7]'>

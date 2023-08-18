@@ -3,6 +3,8 @@ import LoanIcon from '../dash-assets/loan.png'
 import SalaryIcon from '../dash-assets/salary.png'
 import EmployeeIcon from '../dash-assets/employee.png'
 
+
+
 export const card_data = [
     {
         icon: EmployeeIcon,
