@@ -5,7 +5,7 @@ import Send from '../../assets/send.png'
 
 const Footer = () => {
   return (
-    <div className='bg-[#FFF] border border-t-[#EAEAEA] py-[2rem] px-2 md:px-[3rem] flex-col-reverse md:flex-row justify-between items-start md:space-x-[5rem] lg:space-x-[10rem] w-full'>
+    <div className='bg-[#FFF] border border-t-[#EAEAEA] py-[2rem] px-2 lg:px-[3rem] md: flex md:flex-row justify-between items-start md:space-x-[2rem] lg:space-x-[10rem] w-full'>
       <div className='space-y-4'>
         <img src={LogoDark} alt="" />
         <div className='hidden md:block'>
